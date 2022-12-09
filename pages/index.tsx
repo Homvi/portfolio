@@ -38,12 +38,12 @@ export default function Home() {
       </Head>
       <body className="bg-white dark:bg-black text-white dark:text-black">
         <div className="bg-gray-50 dark:bg-gray-900">
-          <button
-            className="bg-white text-black px-2 py-1 dark:bg-black dark:text-white border-2 rounded-2xl"
+          <div
+            className="bg-white text-black px-2 w-fit m-2 cursor-pointer dark:bg-gray-900 dark:text-white border-2 rounded-2xl"
             onClick={toggleMode}
           >
-            mode
-          </button>
+            toggle dark theme
+          </div>
           <main className="flex flex-col justify-center px-8 bg-gray-50 min-h-screen dark:bg-gray-900">
             <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
               <div className="flex flex-col-reverse sm:flex-row items-start">
