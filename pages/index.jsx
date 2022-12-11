@@ -35,7 +35,7 @@ export default function Home() {
             <Introduction />
             <h3
               id="works"
-              className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-center md:text-left w-full text-white"
+              className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-left w-full text-white"
             >
               Works and Projects
             </h3>
