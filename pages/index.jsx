@@ -28,7 +28,7 @@ export default function Home() {
         <meta name="description" content="Luxcode official site" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="bg-black text-white pt-20">
+      <div className="bg-black text-white pt-20 overflow-x-hidden">
         <Navbar isBorder={isBorderOnNav} />
         <div className="flex flex-col justify-center px-8  min-h-screen bg-black">
           <div className="flex flex-col justify-center items-start max-w-2xl border-gray-700 mx-auto pb-16">
@@ -39,10 +39,12 @@ export default function Home() {
             >
               Works and Projects
             </h3>
-            <div className="flex flex-col  w-full items-center md:flex-row">
-              <Card />
-              <Card />
-              <Card />
+            <div className="overflow-x-scroll md:overflow-x-hidden relative left-[-30px] flex justify-start px-5  w-screen">
+              <div className="flex justify-start">
+                <Card />
+                <Card />
+                <Card />
+              </div>
             </div>
           </div>
         </div>
