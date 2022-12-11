@@ -2,9 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Navbar = () => {
+const Navbar = ({ isBorder }) => {
     return (
-        <div className='border-b-[1px] border-white/20 flex justify-start fixed top-0 left-0 w-screen backdrop-blur-sm z-50' >
+        <div className={isBorder ? 'transition-all duration-75 border-b-[1px] border-white/20 flex justify-start fixed top-0 left-0 w-screen backdrop-blur-sm z-50' : 'border-white/0 flex border-b-[1px] justify-start transition-all duration-75 fixed top-0 left-0 w-screen backdrop-blur-sm z-50'} >
             <div id="logo" className='p-3 w-[33vw]'>
                 <Link href="/">
                     <Image alt='logo' height={18} width={18} src="/img/luxcode-logo.svg" />
