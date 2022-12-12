@@ -4,6 +4,30 @@ import Introduction from "../components/Introduction";
 import { useEffect, useState } from "react";
 import Card from "../components/Card"
 
+const cardsData = [
+  {
+    name: "Akman Solutions",
+    desc: "Made for my current company",
+    technologies: "Html, Css, Sass,  Javascript",
+    git: "https://github.com/Homvi/akmanSolutions",
+    live: "https://akmansolutions.com/"
+  },
+  {
+    name: "Goldkert transfer",
+    desc: "HTML5UP based website. Made for the Goldkertbau Kft. The site shares and gathers information.",
+    technologies: "Html, Css, Sass, Javascript",
+    git: "https://github.com/Homvi/GoldkertTransfer",
+    live: "https://goldkerttransfer.com/"
+  },
+  {
+    name: "Wedding site",
+    desc: "Custom website made for share information about the wedding of the client.",
+    technologies: "React, Next.js, Tailwind, Netlify",
+    git: "https://github.com/Homvi/next-wedding",
+    live: "https://brigieskalmi.com/"
+  },
+]
+
 export default function Home() {
   const [isBorderOnNav, setIsBorderOnNav] = useState(false);
 
@@ -24,8 +48,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Luxcode</title>
-        <meta name="description" content="Luxcode official site" />
+        <title>Adakin</title>
+        <meta name="description" content="adakin official portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-black text-white pt-20 overflow-x-hidden">
@@ -41,9 +65,11 @@ export default function Home() {
             </h3>
             <div className="overflow-x-scroll md:overflow-x-hidden relative left-[-30px] flex justify-start px-5  w-screen">
               <div className="flex justify-start">
-                <Card />
-                <Card />
-                <Card />
+                {cardsData.map((card, id) => {
+                  return <Card key={`card_${id}`} name={card.name} desc={card.desc} technologies={card.technologies} git={card.git} live={card.live} />
+                })}
+
+
               </div>
             </div>
           </div>
