@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Adakin</title>
+        <title>Adakin's portfolio</title>
         <meta name="description" content="adakin official portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -68,8 +68,6 @@ export default function Home() {
                 {cardsData.map((card, id) => {
                   return <Card key={`card_${id}`} name={card.name} desc={card.desc} technologies={card.technologies} git={card.git} live={card.live} />
                 })}
-
-
               </div>
             </div>
           </div>
