@@ -8,7 +8,7 @@ const Card = ({ name, desc, technologies, git, live }) => {
             <div className="flex flex-col justify-between h-full bg-black text-white rounded-lg p-4">
                 <div className="">
                     <h4 className="text-lg py-2 font-bold">{name}</h4>
-                    <h4 className="text-md py-1 font-bold">description</h4>
+                    <h4 className="text-md py-1 font-bold">Description</h4>
                     <p>
                         {desc}
                     </p>
