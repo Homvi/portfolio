@@ -51,8 +51,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Adakin's portfolio</title>
-        <meta name="description" content="adakin official portfolio" />
+        <title>Adakin&apos;s portfolio</title>
+        <meta name="description" content="adakin's official portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-black text-white pt-20 overflow-x-hidden">
