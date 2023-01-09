@@ -18,7 +18,7 @@ const Navbar = ({ isBorder }) => {
             </div>
             <div className="flex items-center">
                 <a href="/assets/CV/HonvedoAdam_Frontend_CV.pdf" download="Adam_Honvedo_CV_Frontend">
-                    <div className="cursor-pointer flex items-center justify-center text-gray-400 text-center rounded-lg border-2 border-gray-600 h-9 w-16 mr-4 md:mr-8 ">
+                    <div className="cursor-pointer flex items-center justify-center text-gray-400 text-center rounded-md border-2 border-gray-600 h-9 w-16 mr-4 md:mr-8 ">
                         CV
                     </div>
                 </a>
