@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Introduction from "../components/Introduction";
 import { useEffect, useState } from "react";
 import Card from "../components/Card"
+import Contact from "../components/Contact"
 
 const cardsData = [
   {
@@ -73,6 +74,7 @@ export default function Home() {
                 })}
               </div>
             </div>
+            <Contact />
           </div>
         </div>
       </div>
