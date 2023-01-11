@@ -4,27 +4,6 @@ import Link from 'next/link'
 import CustomButton from "../components/CustomButton"
 import { useState } from "react"
 
-{/* <div className={isBorder ? 'transition-all  duration-75 border-b-[1px] border-white/20 flex justify-between fixed top-0 left-0 w-screen backdrop-blur-sm z-50' : 'border-white/0 flex border-b-[1px] justify-between transition-all duration-75 fixed top-0 left-0 w-screen backdrop-blur-sm z-50'} >
-<div className='flex'>
-    <div id="logo" className='p-3  '>
-        <Link href="/">
-            <Image alt='logo' height={50} width={50} src="/img/logo-grey.svg" />
-        </Link>
-    </div>
-    <div id="menu" className='flex max-w-2xl items-center justify-center'>
-        <a href="#" className="text-gray-400 p-3 hover:text-white" >Intro</a>
-        <a href="#works" className="text-gray-400 p-3 hover:text-white" >Works</a>
-    </div>
-</div>
-<div className="flex items-center">
-    <a href="/assets/CV/HonvedoAdam_Frontend_CV.pdf" download="Adam_Honvedo_CV_Frontend">
-        <div className="cursor-pointer flex items-center justify-center text-gray-400 text-center rounded-md border-2 border-gray-600 h-9 w-16 mr-4 md:mr-8 ">
-            CV
-        </div>
-    </a>
-</div>
-</div> */}
-
 const Navbar = ({ isBorder }) => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -53,11 +32,11 @@ const Navbar = ({ isBorder }) => {
             </div>
             {/* mobile menu */}
 
-            <div className={isMenuOpen ? "bg-black/60 transition-all duration-100 w-screen absolute text-lg m-0 p-0  flex flex-col justify-start text-white/95 items-center opacity-100" : "  transition-all  duration-100 w-screen absolute m-0 p-0  flex-col justify-start  items-center opacity-0 scale-0 "}>
-                <Link onClick={toggleMenu} href={"/"} className={isMenuOpen ? ' ease-in transition-all duration-100 delay-100 opacity-100 p-2 border-b-[1px]  w-full text-center translate-x-0  ' : '   p-2 border-b-[1px] w-full text-center opacity-0'} >Home</Link>
-                <a onClick={toggleMenu} href={"#works"} className={isMenuOpen ? ' ease-in transition-all duration-100 delay-200 opacity-100 p-2 border-b-[1px]  w-full text-center' : ' p-2 border-b-[1px] w-full text-center opacity-0'} >Works</a>
-                <a onClick={toggleMenu} href={"#contact"} className={isMenuOpen ? ' ease-in transition-all duration-100 delay-300 opacity-100 p-2 border-b-[1px]  w-full text-center' : '  p-2 border-b-[1px] w-full text-center opacity-0'} >Contact</a>
-                <a onClick={toggleMenu} href="/assets/CV/HonvedoAdam_Frontend_CV.pdf" download="Adam_Honvedo_CV_Frontend" className={isMenuOpen ? ' ease-in transition-all duration-100 delay-300 opacity-100 p-2 border-b-[1px]  w-full text-center' : '  p-2 border-b-[1px] w-full text-center opacity-0'} >Download CV</a>
+            <div className={isMenuOpen ? "bg-black/60  w-screen absolute text-lg m-0 p-0  flex flex-col justify-start text-white/95 items-center opacity-100" : "  transition-all  duration-100 w-screen absolute m-0 p-0  flex-col justify-start  items-center opacity-0 scale-0 "}>
+                <Link onClick={toggleMenu} href={"/"} className={isMenuOpen ? ' ease-in  delay-100 opacity-100 p-2   w-full text-center translate-x-0  ' : '   p-2   w-full text-center opacity-0'} >Home</Link>
+                <a onClick={toggleMenu} href={"#works"} className={isMenuOpen ? ' ease-in  delay-200 opacity-100 p-2   w-full text-center' : ' p-2   w-full text-center opacity-0'} >Works</a>
+                <a onClick={toggleMenu} href={"#contact"} className={isMenuOpen ? ' ease-in  delay-300 opacity-100 p-2   w-full text-center' : '  p-2   w-full text-center opacity-0'} >Contact</a>
+                <a onClick={toggleMenu} href="/assets/CV/HonvedoAdam_Frontend_CV.pdf" download="Adam_Honvedo_CV_Frontend" className={isMenuOpen ? 'ease-in delay-300 opacity-100 p-2  w-full text-center' : 'p-2  w-full text-center opacity-0'} >Download CV</a>
             </div>
 
             {/* desktop nav above md*/}
@@ -87,8 +66,6 @@ const Navbar = ({ isBorder }) => {
         </nav>
     )
 }
-
-
 
 export default Navbar
 
