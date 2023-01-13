@@ -11,7 +11,7 @@ const Contact = () => {
                 id="works"
                 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-left w-full text-white"
             >
-                Find me
+                You can find me on
             </h3>
             <div className="flex text-6xl mb-5 justify-start">
                 <a href="https://www.linkedin.com/in/adamhonvedo/" rel="noreferrer noopener" className='pr-5 hover:scale-105 text-gray-100 hover:text-white' target="_blank" >
