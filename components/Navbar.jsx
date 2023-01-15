@@ -32,11 +32,11 @@ const Navbar = ({ isBorder }) => {
             </div>
             {/* mobile menu */}
 
-            <div className={isMenuOpen ? "bg-black/60  w-screen absolute text-lg m-0 p-0  flex flex-col justify-start text-white/95 items-center opacity-100" : "  transition-all  duration-100 w-screen absolute m-0 p-0  flex-col justify-start  items-center opacity-0 scale-0 "}>
-                <Link onClick={toggleMenu} href={"/"} className={isMenuOpen ? ' ease-in  delay-100 opacity-100 p-2   w-full text-center translate-x-0  ' : '   p-2   w-full text-center opacity-0'} >Home</Link>
-                <a onClick={toggleMenu} href={"#works"} className={isMenuOpen ? ' ease-in  delay-200 opacity-100 p-2   w-full text-center' : ' p-2   w-full text-center opacity-0'} >Works</a>
-                <a onClick={toggleMenu} href={"#contact"} className={isMenuOpen ? ' ease-in  delay-300 opacity-100 p-2   w-full text-center' : '  p-2   w-full text-center opacity-0'} >Contact</a>
-                <a onClick={toggleMenu} href="/assets/CV/HonvedoAdam_Frontend_CV.pdf" download="Adam_Honvedo_CV_Frontend" className={isMenuOpen ? 'ease-in delay-300 opacity-100 p-2  w-full text-center' : 'p-2  w-full text-center opacity-0'} >Download CV</a>
+            <div className={isMenuOpen ? "bg-black/95 transition-opacity duration-100 w-screen absolute text-lg flex flex-col justify-center text-white/95 items-center opacity-100 h-screen backdrop-blur-lg" : "  transition-all  duration-100 w-screen absolute m-0 p-0  flex-col justify-start  items-center opacity-0 scale-0 "}>
+                <Link onClick={toggleMenu} href={"/"} className={isMenuOpen ? ' ease-in  delay-100 opacity-100 p-3   w-full text-center translate-x-0  ' : '   p-2   w-full text-center opacity-0'} >Home</Link>
+                <a onClick={toggleMenu} href={"#works"} className={isMenuOpen ? ' ease-in  delay-200 opacity-100 p-3   w-full text-center' : ' p-2   w-full text-center opacity-0'} >Works</a>
+                <a onClick={toggleMenu} href={"#contact"} className={isMenuOpen ? ' ease-in  delay-300 opacity-100 p-3   w-full text-center' : '  p-2   w-full text-center opacity-0'} >Contact</a>
+                <a onClick={toggleMenu} href="/assets/CV/HonvedoAdam_Frontend_CV.pdf" download="Adam_Honvedo_CV_Frontend" className={isMenuOpen ? 'ease-in delay-300 opacity-100 p-3  w-full text-center' : 'p-2  w-full text-center opacity-0'} >Download CV</a>
             </div>
 
             {/* desktop nav above md*/}
