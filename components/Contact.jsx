@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Contact = () => {
     return (
-        <>
+        <div className='py-6'>
             <h3
                 id="works"
                 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-left w-full text-white"
@@ -21,7 +21,7 @@ const Contact = () => {
                     <FaGithubAlt />
                 </Link>
             </div>
-        </>
+        </div>
     )
 }
 
