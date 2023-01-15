@@ -8,7 +8,7 @@ const Contact = () => {
     return (
         <div className='py-6'>
             <h3
-                id="works"
+                id="contact"
                 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-left w-full text-white"
             >
                 You can find me on
