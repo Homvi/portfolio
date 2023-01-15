@@ -16,7 +16,7 @@ const Button = ({ linkTo }) => {
 
     return (
         <>
-            <div className="flex  px-5 py-1  relative hover:opacity-95 transition-all duration-300 cursor-pointer flex-col  justify-center  items-center">
+            <div className="flex px-3  py-1  relative hover:opacity-95 transition-all duration-300 cursor-pointer flex-col  justify-center  items-center">
                 <div className="flex pb-1">
                     <a href="/assets/CV/HonvedoAdam_Frontend_CV.pdf" download="Adam_Honvedo_CV_Frontend">
                         Download CV
